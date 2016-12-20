@@ -1,0 +1,14 @@
+{
+	"propertyEditors": [
+			{
+				"alias": "ThemeEnginePicker",
+				"name": "Theme Engine: Theme Picker",
+				"editor": {
+					"view": "~/App_Plugins/ThemeEngine/PropertyEditors/ThemePicker.html"
+				}
+			}
+    ], 
+    "javascript": [
+		"~/App_Plugins/ThemeEngine/PropertyEditors/themepicker.controller.js"
+    ]
+}
