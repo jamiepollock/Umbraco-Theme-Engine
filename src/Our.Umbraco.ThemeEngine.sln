@@ -5,6 +5,8 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Our.Umbraco.ThemeEngine.Core", "Our.Umbraco.ThemeEngine.Core\Our.Umbraco.ThemeEngine.Core.csproj", "{61FAC6A1-B0C2-44BF-A921-17061FFA31FC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Our.Umbraco.ThemeEngine.Web", "Our.Umbraco.ThemeEngine.Web\Our.Umbraco.ThemeEngine.Web.csproj", "{4D46DC6D-CCA5-48FD-A2FD-CE4297BD4D3F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{61FAC6A1-B0C2-44BF-A921-17061FFA31FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{61FAC6A1-B0C2-44BF-A921-17061FFA31FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{61FAC6A1-B0C2-44BF-A921-17061FFA31FC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4D46DC6D-CCA5-48FD-A2FD-CE4297BD4D3F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4D46DC6D-CCA5-48FD-A2FD-CE4297BD4D3F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4D46DC6D-CCA5-48FD-A2FD-CE4297BD4D3F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4D46DC6D-CCA5-48FD-A2FD-CE4297BD4D3F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
