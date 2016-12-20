@@ -253,6 +253,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controllers\ThemeEnginePropertyEditorApiController.cs" />
     <Compile Include="Extensions\HtmlHelperExtensions.cs" />
     <Compile Include="Extensions\UrlHelperExtensions.cs" />
     <Compile Include="PathType.cs" />
