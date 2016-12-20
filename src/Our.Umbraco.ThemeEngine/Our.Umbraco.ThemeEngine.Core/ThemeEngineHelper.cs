@@ -27,7 +27,7 @@ namespace Our.Umbraco.ThemeEngine.Core
             var standardPath = "";
             var themePath = "";
 
-            var baseThemePath = string.Format("~/App_Plugins/Theming/Themes/{0}", SiteThemeName);
+            var baseThemePath = string.Format("~/App_Plugins/ThemeEngine/Themes/{0}", SiteThemeName);
 
             switch (PathType)
             {
@@ -111,7 +111,7 @@ namespace Our.Umbraco.ThemeEngine.Core
             }
             else
             {
-                var path = "/App_Plugins/Theming/CssOverrides/{0}";
+                var path = "/App_Plugins/ThemeEngine/CssOverrides/{0}";
                 return string.Format(path, CssOverrideFileName);
             }
 
