@@ -45,6 +45,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App_Plugins\ThemeEngine\package.manifest" />
+    <None Include="config\Our.Umbraco.ThemeEngine.config" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="App_Plugins\ThemeEngine\PropertyEditors\themepicker.controller.js" />
