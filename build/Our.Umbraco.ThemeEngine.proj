@@ -18,7 +18,7 @@
   <PropertyGroup>
     <PackageName>Our.Umbraco.ThemeEngine</PackageName>
     <MinUmbracoVersion>7.5.0</MinUmbracoVersion>
-    <Readme>An Umbraco plugin to allow sites to support multiple user selected themes.</Readme>
+    <Readme>An Umbraco package to allow sites to support multiple user selected themes.</Readme>
     <AuthorName>Jamie Pollock</AuthorName>
     <AuthorUrl>https://github.com/jamiepollock/Umbraco-Theme-Engine/graphs/contributors</AuthorUrl>
     <PackageLicenseName>MIT license</PackageLicenseName>
@@ -31,7 +31,7 @@
     <PackageId>Our.Umbraco.ThemeEngine</PackageId>
     <Copyright>Copyright &#169; Jamie Pollock and contributors.</Copyright>
     <Owners>Jamie Pollock</Owners>
-    <Description>An Umbraco plugin to allow sites to support multiple user selected themes.</Description>
+    <Description>An Umbraco package to allow sites to support multiple user selected themes.</Description>
     <IconUrl>https://raw.githubusercontent.com/jamiepollock/Umbraco-Theme-Engine/master/build/assets/icon/umbraco-themeengine-128.png</IconUrl>
     <Tags>umbraco nuget</Tags>
     <Language>en-GB</Language>

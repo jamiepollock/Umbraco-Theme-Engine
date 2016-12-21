@@ -1,9 +1,19 @@
-Umbraco Theme Engine is an Umbraco plugin which allows web developers to support multiple user selected themes in their Umbraco web applications.
+# Umbraco Theme Engine 
+An [Umbraco](http://umbraco.com/) package which allows web developers to support multiple user selected themes in their Umbraco web applications.
 
 The idea was inspired by [Heather Floyd's](https://github.com/hfloyd) article, "[How to Create Multiple Unique Sites in One Installation Using Theming and the Umbraco Grid](http://24days.in/umbraco-cms/2016/unique-sites-using-theming/)", in the [2016 series of 24 Days in Umbraco](http://24days.in/umbraco-cms/2016/).
 
-# Icon credits
-The plugin icon is a combination of three icons by the following people;
+## Builds & Releases
+
+[![Build status](https://ci.appveyor.com/api/projects/status/9ft9tbei3dbwynig?svg=true)](https://ci.appveyor.com/project/jamiepollock/umbraco-theme-engine)
+
+## Licencing
+
+Licensed under the [MIT License](LICENSE.md).
+
+### Icon
+
+The package icon is a combination of three icons by the following people;
 
 * [Gears](https://thenounproject.com/icon/406752/) by ImageCatalog
 * [Pencil](https://thenounproject.com/icon/347/) by Edward Boatman
