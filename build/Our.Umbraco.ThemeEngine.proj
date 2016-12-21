@@ -33,7 +33,7 @@
     <Owners>Jamie Pollock</Owners>
     <Description>An Umbraco package to allow sites to support multiple user selected themes.</Description>
     <IconUrl>https://raw.githubusercontent.com/jamiepollock/Umbraco-Theme-Engine/master/build/assets/icon/umbraco-themeengine-128.png</IconUrl>
-    <Tags>umbraco nuget</Tags>
+    <Tags>umbraco themes razor</Tags>
     <Language>en-GB</Language>
     <RequireLicenseAcceptance>false</RequireLicenseAcceptance>
   </PropertyGroup>
