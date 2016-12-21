@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<configuration xmlns:xdt="http://schemas.microsoft.com/XML-Document-Transform">
+  <configSections>
+    <section name="Our.Umbraco.ThemeEngine" type="Our.Umbraco.ThemeEngine.Core.Configuration.ThemeEngineConfigurationSection" requirePermission="false"  xdt:Locator="Match(name)" xdt:Transform="InsertIfMissing"/>
+  </configSections>
+
+  <Our.Umbraco.ThemeEngine configSource="config\Our.Umbraco.ThemeEngine.config" xdt:Transform="InsertIfMissing"/>
+</configuration>

@@ -121,12 +121,17 @@
       <BinFiles Include="$(CoreProjectDir)\bin\$(BuildConfig)\Our.Umbraco.ThemeEngine.Core.dll" />
       <PdbFiles Include="$(CoreProjectDir)\bin\$(BuildConfig)\Our.Umbraco.ThemeEngine.Core.pdb" />
       <AppPluginFiles Include="$(WebProjectDir)\App_Plugins\ThemeEngine\**\*.*" />
+      <ConfigFiles Include="$(WebProjectDir)\Config\**\*.*" />
+      <WebConfigXDTInstallFile Include="$(MSBuildProjectDirectory)\transforms\web.config.install.xdt" />   
 
       <!-- Umbraco specific -->
+      <UmbracoOtherBinFiles Include="$(CoreProjectDir)\bin\$(BuildConfig)\Microsoft.Web.XmlTransform.dll" />
       <UmbracoInstallerLogo Include="$(MSBuildProjectDirectory)\assets\icon\umbraco-themeengine-32.png"/>
       <PackageFile Include="$(MSBuildProjectDirectory)\package.xml" />
       
-      <!-- NuGet specific -->
+
+
+      <!-- NuGet specific -->   
       <SrcFiles Include="$(CoreProjectDir)\**\*.cs" Exclude="$(CoreProjectDir)\obj\**"/>
       <NuSpecFile Include="$(MSBuildProjectDirectory)\package.nuspec" />
 
@@ -136,8 +141,12 @@
     <!-- Umbraco -->
     <Copy SourceFiles="@(BinFiles)" DestinationFolder="$(BuildUmbDir)\bin" />
     <Copy SourceFiles="@(PackageFile)" DestinationFolder="$(BuildUmbDir)" />
-    <Copy SourceFiles="@(InstallerBinFiles)" DestinationFolder="$(BuildUmbDir)\bin" />
+    <Copy SourceFiles="@(UmbracoOtherBinFiles)" DestinationFolder="$(BuildUmbDir)\bin" />
+
     <Copy SourceFiles="@(AppPluginFiles)" DestinationFiles="@(AppPluginFiles->'$(BuildUmbDir)\App_Plugins\ThemeEngine\%(RecursiveDir)%(Filename)%(Extension)')" />
+    
+    <Copy SourceFiles="@(ConfigFiles)" DestinationFiles="@(ConfigFiles->'$(BuildUmbDir)\Config\%(RecursiveDir)%(Filename)%(Extension)')" />
+    <Copy SourceFiles="@(WebConfigXDTInstallFile)" DestinationFolder="$(BuildUmbDir)\App_Plugins\ThemeEngine\Install" />
     <Copy SourceFiles="@(UmbracoInstallerLogo)" DestinationFolder="$(BuildUmbDir)\App_Plugins\ThemeEngine\Install" />
 
     <!--NuGet -->
@@ -146,9 +155,12 @@
     <Copy SourceFiles="@(SrcFiles)" DestinationFiles="@(SrcFiles->'$(BuildNuGetDir)\src\%(RecursiveDir)%(Filename)%(Extension)')" />
    
     <Copy SourceFiles="@(AppPluginFiles)" DestinationFiles="@(AppPluginFiles->'$(BuildNuGetDir)\Content\App_Plugins\ThemeEngine\%(RecursiveDir)%(Filename)%(Extension)')" />
+    <Copy SourceFiles="@(ConfigFiles)" DestinationFiles="@(ConfigFiles->'$(BuildNuGetDir)\Content\Config\%(RecursiveDir)%(Filename)%(Extension)')" />
+
     <Copy SourceFiles="@(NuSpecFile)" DestinationFolder="$(BuildNuGetDir)" />
 
 		<Copy SourceFiles="@(InstallPsFile)" DestinationFolder="$(BuildNuGetDir)\tools" />
+    <Copy SourceFiles="@(WebConfigXDTInstallFile)" DestinationFolder="$(BuildNuGetDir)\Content" />
   </Target>
 
   <!-- MANIFEST UMBRACO -->

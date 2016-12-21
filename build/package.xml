@@ -27,7 +27,9 @@
   <Languages />
   <DataTypes />
 
-  <Actions />
+  <Actions>
+    <Action runat="install" alias="UTE.TransformConfig" file="~/web.config" xdtfile="~/app_plugins/themeengine/install/web.config.install.xdt"></Action>
+  </Actions>
 
   <control />
 
