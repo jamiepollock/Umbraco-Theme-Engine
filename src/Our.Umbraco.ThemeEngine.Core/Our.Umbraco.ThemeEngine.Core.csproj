@@ -262,6 +262,7 @@
     <Compile Include="Configuration\ThemeEngineConfigurationSection.cs" />
     <Compile Include="Controllers\ThemeEnginePropertyEditorApiController.cs" />
     <Compile Include="Extensions\HtmlHelperExtensions.cs" />
+    <Compile Include="Extensions\PublishedContentExtensions.cs" />
     <Compile Include="Extensions\UrlHelperExtensions.cs" />
     <Compile Include="TransformConfigPackageAction.cs" />
     <Compile Include="PathType.cs" />
